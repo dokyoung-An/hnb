@@ -43,6 +43,10 @@
    
 }
 
+.service-name:hover {
+    cursor: pointer;
+}
+
 .service-name h2 {
     display:inline-block;
     margin:20px;

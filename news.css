@@ -1,10 +1,16 @@
+section {
+    margin:0;
+    padding:0;
+}
+
 .news {
    top:0;
    left:0;
    width: 100%;
+   margin:0;
    overflow: hidden;
 }
-
+/* 
 .news-event {
     width:100%;
     height: 100%;
@@ -134,4 +140,139 @@
     padding: 5px 10px;
     
    
+} */
+
+.news .news-container {
+    width:100%;
+
+}
+
+.news .news-container .news-title {
+    text-align: center;
+    padding-top:3%;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.news .news-container .image-section {
+    display: flex;
+    top:0;
+    left:0;
+    margin: 0 auto;
+    width: 100%;
+    padding:2% 5%;
+    
+}  
+
+
+.news .news-container .image-section .p2:not(:last-child) {
+    margin-right: 20px; 
+}
+.news .news-container .image-section .p1
+ { width:600px;
+    height:350px;
+   overflow: hidden;
+   margin-right: 20px;
+}
+
+.news .news-container .image-section .p2 {
+    width:400px;
+    height:350px;
+    overflow: hidden;
+}
+
+.news .news-container .image-section .p1 a img {
+  width:600px;
+  height:350px;
+}
+.news .news-container .image-section .p2 img {
+    width:400px;
+    height:350px;    
+}
+
+.news .news-container .image-section .p1 img:hover,
+.news .news-container .image-section .p2 img:hover {
+   transform: scale(1.1);
+   transition: 1s ease;
+}
+
+.news .news-container .image-intro {
+    position: absolute;
+    display: flex;
+    width:100%;
+    margin-top:-8%;
+    margin-left:7%;
+    justify-content: space-between;
+}
+
+.news .news-container .image-intro a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.news .news-container .image-intro a h5{
+    margin-bottom:10px;
+    border:1px solid rgba(255,255,255,0.5);
+    width:20%;
+    padding:3%;
+}
+
+.news .news-container .image-intro a h5:hover {
+    border:1px solid rgba(255,255,255,1);
+    transition: 1s ease;
+
+}
+.news .news-container .image-intro .intro2{
+    transform: translateX(-6%);
+    
+}
+.news .news-container .image-intro .intro3{
+    transform: translateX(-73%);
+    
+}
+.news .news-container .image-intro .intro1{
+    display: flex;
+    top:-20px;
+  
+}
+.line2 {
+    margin-top: 3%;
+    width:100%;
+    height:2px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+footer {
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height:30vh;
+    background-color:#222;
+    top:0;
+
+}
+.footer {
+    /* width: 100%;
+    margin:5% 10%; */
+}
+
+
+
+.footer .footer-container {
+    display: flex;
+    padding: 4.5% 10%;
+}
+
+.footer .footer-container .factory {
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-container p{
+    color: #fff;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 3px;
+
 }
