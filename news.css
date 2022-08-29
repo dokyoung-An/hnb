@@ -2,17 +2,17 @@
    top:0;
    left:0;
    width: 100%;
-   background-color: antiquewhite;
-   
+   overflow: hidden;
 }
+
 .news-event {
     width:100%;
     height: 100%;
     display: grid;
     width:100%;
-    height: 90vh;
+    height: 50vh;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 10% 70% 20%;
+    grid-template-rows: 10% 60% 30%;
     grid-template-areas: 
     " news-title news-title news-title "
     " news-picture news-picture news-picture"
@@ -22,17 +22,14 @@
 
 .news-event .news-title{
     grid-area: news-title;
-    background-color: #222;
     width: 100%;
     display: flex;
     align-items: flex-end;
-
 }
 
 .news-event .news-picture {
     grid-area: news-picture;
     display: grid;
-    background-color: aqua;
     width:100%;
     height: 100%;
     top: 0;
@@ -41,90 +38,100 @@
     grid-template-rows: repeat(2,1fr);
     grid-template-areas:
      "new-img1 article1 new-img2 article2 new-img3 article3"
-     "article-intro1 article-intro1 article-intro2 article-intro2 article-intro3 article-intro3";
+     "new-img1 article-intro1 new-img2 article-intro2 new-img3 article-intro3";
     gap:2px;
     }
 
 .news-event .news-picture .new-img1{
-   grid-area: new-img1;
-  background-image: url("./images/2\ \(1\).jpg");
+  grid-area: new-img1;
   background-image: center;
   background: cover;
    
 }
+
+.news-event .news-picture .new-img1 img,
+.news-event .news-picture .new-img2 img,
+.news-event .news-picture .new-img3 img {
+    width:150px;
+    height:150px;
+}
 .news-event .news-picture .new-img2{
     grid-area: new-img2;
-    background-color: #222;
- }
+}
  .news-event .news-picture .new-img3{
     grid-area: new-img3;
-    background-color: #222;
+   
  }
 
- .news-event .news-picture .new-img1 img{
-    grid-area: new-img1;
-    background-color: #222;
-    
- }
- .news-event .news-picture .new-img2 img{
-     grid-area: new-img2;
-     background-color: #222;
-  }
- .news-event .news-picture .new-img3 img{
-     grid-area: new-img3;
-     background-color: #222;
-  }
-
- .news-event .news-picture .article1{
+ 
+ .news-event .news-picture .article1,
+ .news-event .news-picture .article2,
+ .news-event .news-picture .article3{
     grid-area: article1;
-    background-color:  red;
+    width: 220px;
+    height:50px;  
+    margin: 0 5px;
+    display: flex;
+    align-items: flex-start;
  }
  .news-event .news-picture .article2{
      grid-area: article2;
-     background-color:  red;
   }
   .news-event .news-picture .article3{
-     grid-area: article3;
-     background-color: red;
+     grid-area: article3; 
   }
-  .news-event .news-picture .acticle-intro1{
-    grid-area: acticle-intro1;
-    background-color: blue;
+
+  .news-event .news-picture .article1 h4,
+ .news-event .news-picture .article2 h4,
+ .news-event .news-picture .article3 h4{
+    text-align: flex-end;
+    word-break: keep-all;  
  }
- .news-event .news-picture .acticle-intro2{
-     grid-area: acticle-intro2;
-     background-color:blue;
+
+
+.news-event .news-picture .article-intro1,
+.news-event .news-picture .article-intro2,
+.news-event .news-picture .article-intro3
+  {  width: 220px;
+    height: 120px;
+    transform: translateY(-60px);
+    margin: 10px 5px 0 5px;
+    grid-area: article-intro1;
+    display: inline-block;
+    font-size:13px;
+    word-break: keep-all;
+ }
+ .news-event .news-picture .article-intro2{
+     grid-area: article-intro2;
   }
-  .news-event .news-picture .acticle-intro3{
-     grid-area: acticle-intro3;
-     background-color: blue;
+  .news-event .news-picture .article-intro3{
+     grid-area: article-intro3;
   }
 
-.news-event .news-picture .new-img img{
-    width:50px;
-    height: 50px;
- 
-}
 
-.news-event .news-picture .article {
-    width:100px;
-    height: 100px;
-    grid-area: article;
 
-}
-
-.news-event .news-picture .acticle-intro {
-    width:100px;
-    height: 100px;
-    grid-area: acticle-intro;
-
-}
-
-.news .footer{
-    grid-area: footer;
-    background-color:red;
-    top:0;
+.footer{
+    position: relative;
+    background-color:rgba(1,1,1,0.8);
+    margin-top:-10%;
     left:0;
     width: 100%;
-    height: 100%;
+    height: 20vh; 
+    padding: 20px 50px;
+      
+}
+.footer div {
+    display: flex;
+    margin:10px 50px;
+    flex-wrap: wrap;
+    color:rgba(255,255,255,0.5)
+}
+.footer h4 {
+    font-size: 20px;
+}
+
+.footer h5 {
+    padding: 5px 10px;
+    
+   
 }
