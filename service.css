@@ -1,4 +1,4 @@
-.service-menu {
+/* .service-menu {
     width:100vw;
     height: 100vh;
     top:0;
@@ -111,4 +111,151 @@
     }
 
 
+   */
+
+   .service {
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    width:100%;
+   
+   }
+
+   .section-container {
+    width:100%;
+    height:100vh;
+   }
+
+   .section-container .service-img {
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/1\ \(1\).jpg");
+    background-size:cover;
+    background-position: center;
+
+   }
+.section-container .service-img:hover{
+    cursor: pointer;
+ }
+ .section-container .service-img .service-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   }
+
+   .section-container .service-img .service-menu div {
+    padding: 20px 30px;
+   }
+ .section-container .service-img .service-menu div h2 {
+    font-size: 28px;
+    font-weight: 800;
+    position: relative;
+   }
+   .section-container .service-img .service-menu h2:before {
+      content:'';
+      position: absolute;
+      width:0;
+      height: 3px;
+      background-color: #fff;
+      transition: 0.3s ease;
+      margin-top:40px;
+      left:0;
+     
+   }
+   .section-container .service-img .service-menu h2:hover:before{
+     width:100%;
+   }
+
+ 
+   .section-container .service-img .basic {
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10%;
   
+   }
+
+   .section-container .service-img .basic div {
+      margin:10px 30px 100px 50px;
+
+   }
+
+   .section-container .service-img .basic .line {
+    width: 600px;
+    height:2px;
+    background-color: #fff;
+    margin-bottom: 120px;
+   }
+
+   .section-container .service-img .basic .sn {
+    margin-bottom:110px;
+   }
+
+   
+   .section-container .service-img .basic h2 {
+    font-size: 24px;
+   }
+
+   @media (max-width:1040px) {
+    .section-container .service-img {
+        min-width: 500px;
+        min-height: 500px;
+      
+    }
+    .section-container .service-img .service-menu {
+        display: grid;
+     
+    }
+    .section-container .service-img .service-menu div {
+        background-color: rgba(255,255,255,0.5);
+        margin: 20px 0 0 20px;
+        transform: translateY(150%);
+        transform: translateX(-150%);
+    }
+    .section-container .service-img .service-menu div h2{
+        font-size: 22px;
+
+    }
+    /* 밑에 설명 */
+
+    .section-container .service-img .basic {
+        margin-top:-300px;
+
+    }
+
+
+   }
+
+   @media (max-width:520px) {
+    .section-container .service-img .service-menu div {
+        background-color: rgba(255,255,255,0.5);
+        margin: 20px 0 0 20px;
+        transform: translateY(20%);
+        transform: translateX(-150%);
+    }
+    .section-container .service-img .basic {
+         display: flex;
+         width:20%;
+         transform: translateX(80%);
+       
+        
+    }
+    .section-container .service-img .basic div {
+         margin-right: 0px;
+    }
+    .section-container .service-img .basic .workperiod {
+        margin-bottom: 87px;
+    }
+    .section-container .service-img .basic div h2{
+        font-size: 15px;
+        color: #fff;
+    }
+    .section-container .service-img .basic div p {
+        font-size: 10px;
+        color: #fff;
+    }
+
+   }
