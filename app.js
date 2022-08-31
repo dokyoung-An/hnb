@@ -66,7 +66,7 @@ function onChangeLang1 () {
 
 
 function onMainWorks (){
-   subMainWorks.classList.add("active");
+    subMainWorks.classList.add("active");
     subMainService.classList.remove("active");
     subMainAbout.classList.remove("active");
     rightSideBar.classList.add("active");

@@ -17,6 +17,7 @@
 .text-content {
     grid-area: text-content;
     transform: translateY(20%);
+    height: 80%;
  
 }
 
@@ -49,7 +50,7 @@
     display: flex;
     width:1560px;
     height: 100%;
-     
+    min-height: 720px; 
 }
 .slide {
     width:100%;
@@ -75,7 +76,8 @@
 
 
 @media (max-width:1040px){
-    .second-page { padding: 10% 3% 10% 3%;}
+    .second-page { padding: 10% 3% 10% 3%;
+        min-height: 720px; }
         
     .text-content {
         width:60%;
