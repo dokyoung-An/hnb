@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link reld="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="vrproduction.css">
+
+   <title>VR TOUR</title>
+</head>
+<!-- 공통사항 -->
+<body>
+    <header>
+        <a href="./index.html" class="brand">HNB</a>
+        <div class="menu-btn5"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <ul>
+               <li><a href="/">HNB TOWN</a></li>
+               <li><a href="/">CONTACT</a></li>
+               <li><a href="/" class="lang">KOR</a></li>
+               <li><a href="/" class="none">WORKS</a></li>
+               <li><a href="/" class="none">SERVICE</a></li>
+               <li><a href="/" class="none">CONTACT</a></li>
+               <li><a href="/" class="none1">KOR</a></li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    <div class="menu-btn3"></div>
+    <!-- 사이드바 -->
+    <div class="side-bar">
+        <div class="leftside-bar">
+            <div class="main-works1"><a href="#">WORKS</a>
+           
+            </div>
+            <div class="main-service1"><a href="#">SERVICE</a>
+                
+            </div>
+            <div class="main-about1"><a href="#">ABOUT</a>
+                
+            </div>
+            <div class="main-page"><a href="./index.html">MAIN</a>
+                
+            </div>
+        </div>
+        <div class="rightside-bar">
+            <div class="main-works">
+                <a href="./cg service.html" class="sub-item">VIRTUAL SPACE</a>
+                <a href="#" class="sub-item">DIGITAL TWIN</a>
+            </div>
+            <div class="main-service">
+                <a href="./vrproduction.html" class="sub-item">VR PRODUCTION</a>
+                <a href="./vrtour.html" class="sub-item">VR TOUR</a>
+            </div>
+            <div class="main-about">
+                    <a href="#" class="sub-item">INTRODUCE</a>
+                    <a href="#" class="sub-item">CONTACT</a>
+                </div>
+        </div>
+    </div>
+    
+   <!-- 공통사항 -->   
+    
+<script src="app.js"></script>
+   
+    <script src="vrproduction.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.leftside-bar').click(function(){
+        $(this).next('.catagory-submenu').slideToggle();
+      
+    });
+
+});
+// 공통사항
+</script>
+</body>
+</html>

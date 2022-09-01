@@ -1,3 +1,8 @@
+.side-bar .leftside-bar .main-page {
+    margin-top: 80px;
+    
+}
+
 section {
     margin: 0;
     padding:0;
@@ -75,6 +80,10 @@ section {
 .vrpr .vrpr-image .info-box2:hover{
     background-color:rgba(46, 1, 1, 0.7);
 
+}
+
+.vrpr a {
+    cursor: pointer;
 }
 
 /* 설명 페이지 시작 */
@@ -204,7 +213,7 @@ section {
 .partner-container .partner-title {
     display: flex;
     margin:0 150px 20px 150px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 .partner-container .partner-title img {
